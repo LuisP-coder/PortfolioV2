@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <title>My Portfolio</title>
+    </head>
+
+    <body>
+        <header id="home">
+            <nav>
+                <p class="name">Luis Perez</p>
+                
+                <ul class="list-item">
+                    <li><a href="#about" class="nav-links">About</a></li>
+                    <li><a href="#projects" class="nav-links">Projects</a></li>
+                    <li><a href="#contact" class="nav-links">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <article class="row">
+                    <div class="home-page">
+                        <h1 id="wave">Hey👋! I'm <span class="special">Luis</span>.</h1>
+            
+                        <p id="small-intro">
+                            A <span class="special">Quality Assurance Engineer</span> and an aspiring 
+                            <span class="special">Web Developer</span> based in
+                            SF Bay Area.
+                        </p>
+
+                        <ul class="skills">
+                            <li>HTML <img src="CodeIcons/HTMLIcon.svg" class="icon" alt="HTML Icon"></li>
+                            <li>CSS <img src="CodeIcons/CSSIcon.svg" class="icon" alt="CSS Icon"></li>
+                            <li>Javascript <img src="CodeIcons/JavascriptIcon.svg" class="icon" alt="Javascript Icon"></li>
+                            <li>Node.js <img src="CodeIcons/NodejsIcon.svg" class="icon" alt="Node.js Icon"></li>
+                            <li>React <img src="CodeIcons/ReactIcon.svg" class="icon" alt="React Icon"></li>
+                            <li>WebdriverIO <img src="CodeIcons/webdriverio.svg" class="icon" alt="WebdriverIO Icon"></li>
+                        </ul>
+                    </div>  
+                </article>
+    
+                <aside id="fake-pic">
+                    <img src="Images/MemojiPortfolio.png" id="memoji" alt="Memoji">
+                </aside> 
+
+                <article id="projects">
+                    <h2 id="present-project">Favorite Projects</h2>
+                    <div class="project-outer">
+                        <div class="project-upper">
+                            <h3 class="app-title">Weather App</h3>
+                            <figure class="project-card">
+                                <img src="Images/WeatherAppScreenshot.png" alt="Sceenshot of my weather app" class="app-image" >
+                            </figure>
+                            <p class="figcaption">App includes current temperature in celsius, wind speed,
+                                <br> and humidity. <br>
+                                <a href="https://luisp-coder.github.io/WeatherApp/index.html" target="_blank" class="nav-links">
+                                    Link to Website
+                                </a>
+                            </p>
+                        </div>
+                        
+                        <div class="project-upper">
+                            <h3 class="app-title">Score Keeper</h3>
+                            <figure class="project-card">
+                                <img src="Images/ScoreKeeper.png" alt="Screenshot of score keeper app" class="app-image" >
+                            </figure>
+                            <p class="figcaption">Count the score of your game using this app. Goes up to 11 points. 
+                                <a href="https://luisp-coder.github.io/ScoreKeeper/" target="_blank" class="nav-links">
+                                    Link to Website
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="project-upper">
+                            <h3 class="app-title">Calculator</h3>
+                            <figure class="project-card">
+                                <img src="Images/Calculator.png" alt="Sceenshot of calculator app" class="app-image" >
+                            </figure>
+                            <p class="figcaption">Simple calculator app using JS.<br>
+                                <a href="https://luisp-coder.github.io/Calculator/" target="_blank" class="nav-links">
+                                    Link to Website
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="project-upper">
+                            <h3 class="app-title">Green Energy</h3>
+                            <figure class="project-card" id="project-4">
+                                <img src="Images/GreenUp.png" alt="Screenshot of Green energy site" class="app-image" >
+                            </figure>
+                            <p class="figcaption">Green Energy Mock Website discussing the use of Solar Panels.<br>
+                                <a href="https://luisp-coder.github.io/GreenUpMock/" target="_blank" class="nav-links">
+                                    Link to Website
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="about">
+                    <div id="bio">
+                        <h3 id="about-me">About Me</h3>
+
+                        <p id="about-title">Born and raised in SF Bay Area</p>
+                        <p id="background">Coming from an immigrant family 
+                            I learned to appreciate, take initiative, and take advantage of 
+                            the opportunities that I have. By making my family proud, I enrolled in the YearUp program
+                            which led to an internship at Momentive.ai and eventually a Full-Time 
+                            roll as a Quality Assurance. But I didn't stop there. Every once in a while I would
+                            study and build small apps to help grow my skills.
+                        </p>
+                    </div>
+
+                    <div class="resume-space">
+                        <a href="https://docs.google.com/document/d/1_15oygLPrbS8EtacTA5YWfIaXcxlOAZd/edit?usp=sharing&ouid=112433525304786479994&rtpof=true&sd=true" 
+                        target="_blank" class="nav-links" id="resume">View Full Resume &#8594;</a>
+                    </div>
+                </article>
+
+                <aside class="portrait">
+                    <div class="background-image">
+                        <img src="Images/SelfieV2.png" id="selfie" alt="Selfie">
+                    </div>
+                </aside>
+
+            </section>
+        </main>
+
+        <footer id="end">
+            <h1>Contact</h1>
+
+            <form action="https://formsubmit.co/luiseperez16@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Email submission!">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="message" placeholder="Mesage" required>
+                <input type="hidden" name="_next" value="https://luisp-coder.github.io/pages/thankyou.html">
+                <button type="submit">Send</button>
+           </form>
+        </footer>
+    </body>
+</html>

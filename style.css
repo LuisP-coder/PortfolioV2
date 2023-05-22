@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial, tahoma;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EFF1F3;
+}
+
+nav {
+    height: 80px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 25px;
+    margin-top: 30px;
+    width: auto;
+    float: left;
+    color: #1A1C1E;
+}
+ 
+.list-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.list-item li {
+    float: left;
+    padding: 13px 13px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.nav-links {
+    position: relative;
+    color: #1A1C1E;
+    font-weight: 700;
+    transform: color 0.4 ease-in-out;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1A1C1E;
+    color: #EFF1F3;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links:hover {
+    color: #373737;
+}
+
+.nav-links:hover::after { 
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #1A1C1E;
+    /* background-color: #3269FF; #D0F500 */
+}
+
+.row {
+    width: 50%;
+    height: 900px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.home-page {
+    width: 560px;
+    margin-top: 40%;
+    margin-left: 120px;
+    color: #1A1C1E;
+}   
+
+#wave {
+    font-size: 32px;
+}
+
+#small-intro {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+}
+
+.skills li {
+    float: left;
+    padding: 10px;
+    margin: 10px 0px 10px 15px;
+    border: 1px solid #1A1C1E;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.skills li:hover {
+    cursor: default;
+    transform: scale(1.2);
+}
+
+#fake-pic {
+    width: 50%;
+    float: right;
+    height: 800px;
+}
+
+#memoji {
+    background-color: #1A1C1E;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 50%;
+}
+
+#projects {
+    clear: both;
+    height: 1300px;
+}
+
+#present-project {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.project-outer {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    row-gap: 75px;
+    margin: 20px 0px 0px 175px;
+}
+
+.project-upper {
+    width: 550px;
+    height: 425px;
+}
+
+.app-title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #313233;
+    width: 550px;
+    height: 340px;
+    border-radius: 15px;
+    color: #EFF1F3;
+    transition: all .2s ease-in-out;
+}
+
+.project-card:hover {
+    background-color: #1A1C1E;
+    transform: scale(1.1);
+}
+
+.app-image {
+    height: 300px;
+    width: 500px;
+    margin: 20px 0px 0px 25px;
+    border-radius: 15px;
+}
+
+.figcaption {
+    margin: 30px 0px 30px 0px;
+    font-size: 18px;
+    text-align: center;
+    color: #1A1C1E;
+}
+
+#about {
+    float: left;
+    height: 500px;
+    width: 50%;
+}
+
+#bio {
+   color: #1A1C1E;
+   width: 90%; 
+   font-size: 18px;
+   text-align: left;
+   padding: 20px;
+   margin-top: 75px;
+}
+
+#about-me {
+    text-align: start;
+    font-size: 24px;
+}
+
+#about-title {
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+#background {
+    margin-top: 15px;
+}
+
+.resume-space {
+    margin: 25px 0px 0px 20px;
+}
+
+#resume {
+    font-size: 24px;
+    font-weight: 200px;
+    margin-top: 25px;
+    color: #1A1C1E;
+}
+
+#resume:hover::after {
+    background-color: #1A1C1E;
+}
+
+.portrait {
+    width: 50%;
+    float: right;
+    height: 500px;
+}
+
+.background-image {
+    width: 310px;
+    height: 400px;
+    background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#selfie {
+    width: 300px;
+    height: 400px;
+}
+
+#end {
+    height: 700px;
+}
