@@ -5,7 +5,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: arial, tahoma;
     list-style: none;
 }
 
@@ -13,7 +12,9 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #EFF1F3;
+    background-color: #f2f2f2;
+    /* background-color: #f15d58; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav {
     bottom: 0;
     left: 0;
     background-color: #1A1C1E;
-    color: #EFF1F3;
+    color: #1A1C1E;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -92,6 +93,10 @@ nav {
 
 #wave {
     font-size: 32px;
+}
+
+.special {
+    color: #f15d58;
 }
 
 #small-intro {
@@ -130,7 +135,7 @@ nav {
 }
 
 #memoji {
-    background-color: #1A1C1E;
+    background-color: #f15d58;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -145,7 +150,12 @@ nav {
 
 #present-project {
     margin-top: 25px;
+    font-size: 32px;
     text-align: center;
+}
+
+#present-project span {
+    color: #f15d58;
 }
 
 .project-outer {
@@ -195,6 +205,38 @@ nav {
     color: #1A1C1E;
 }
 
+.website {
+    position: relative;
+    color: #f15d58;
+    font-weight: 700;
+    transform: color 0.4 ease-in-out;
+}
+
+.website::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f15d58;
+    color: #f15d58;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.website:hover {
+    color: #f15d58;
+}
+
+.website:hover::after { 
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #f15d58;
+    /* background-color: #3269FF; #D0F500 */
+}
+
 #about {
     float: left;
     height: 500px;
@@ -212,12 +254,14 @@ nav {
 
 #about-me {
     text-align: start;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 #about-title {
     margin-top: 10px;
     font-size: 36px;
+    color: #f15d58;
 }
 
 #background {
@@ -246,12 +290,13 @@ nav {
 }
 
 .background-image {
-    width: 310px;
+    width: 350px;
     height: 400px;
-    background-color: red;
+    background-color: #f15d58;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto 0px auto;
+    border-radius: 15px;
+    text-align: center;
 }
 
 #selfie {
@@ -260,5 +305,77 @@ nav {
 }
 
 #end {
-    height: 700px;
+    clear: both;
+    height: 500px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    grid-auto-rows: minmax(400px, auto);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.side-one {
+    width: 70%;
+    text-align: center;
+    margin: 75px 0px 0px 75px;
+}
+
+.side-one h1 {
+    color: #f15d58;
+}
+
+.network {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.social {
+    height: 75px;
+}
+
+.side-two {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.side-two input {
+   height: 30px;
+   margin: 10px 0px;
+   border: 2px solid #f15d58;
+   border-radius: 5px;
+}
+
+.send, .long {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #f15d58;
+    border-radius: 5px;
+}
+
+.long {
+    margin: 10px 0px;
+    height: 100px;
+}
+
+.submit-container {
+    display: block;
+}
+
+.submit {
+    font-size: 1rem;
+    height: 35px;
+    width: 125px;
+    background-color: #f15d58;
+    border: #f15d58;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    cursor: pointer;
 }

@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="style.css">
         <title>My Portfolio</title>
     </head>
@@ -40,6 +44,7 @@
                             <li>Node.js <img src="CodeIcons/NodejsIcon.svg" class="icon" alt="Node.js Icon"></li>
                             <li>React <img src="CodeIcons/ReactIcon.svg" class="icon" alt="React Icon"></li>
                             <li>WebdriverIO <img src="CodeIcons/webdriverio.svg" class="icon" alt="WebdriverIO Icon"></li>
+                            <li>GitHub <img src="CodeIcons/iconmonstr-github-1.svg" class="icon" ali="GitHub Icon"></li>
                         </ul>
                     </div>  
                 </article>
@@ -49,7 +54,7 @@
                 </aside> 
 
                 <article id="projects">
-                    <h2 id="present-project">Favorite Projects</h2>
+                    <h2 id="present-project">Favorite <span>Projects</span></h2>
                     <div class="project-outer">
                         <div class="project-upper">
                             <h3 class="app-title">Weather App</h3>
@@ -58,7 +63,7 @@
                             </figure>
                             <p class="figcaption">App includes current temperature in celsius, wind speed,
                                 <br> and humidity. <br>
-                                <a href="https://luisp-coder.github.io/WeatherApp/index.html" target="_blank" class="nav-links">
+                                <a href="https://luisp-coder.github.io/WeatherApp/index.html" target="_blank" class="website">
                                     Link to Website
                                 </a>
                             </p>
@@ -69,8 +74,8 @@
                             <figure class="project-card">
                                 <img src="Images/ScoreKeeper.png" alt="Screenshot of score keeper app" class="app-image" >
                             </figure>
-                            <p class="figcaption">Count the score of your game using this app. Goes up to 11 points. 
-                                <a href="https://luisp-coder.github.io/ScoreKeeper/" target="_blank" class="nav-links">
+                            <p class="figcaption">Count the score of your game using this app. Goes up to 11 points. <br> 
+                                <a href="https://luisp-coder.github.io/ScoreKeeper/" target="_blank" class="website">
                                     Link to Website
                                 </a>
                             </p>
@@ -82,7 +87,7 @@
                                 <img src="Images/Calculator.png" alt="Sceenshot of calculator app" class="app-image" >
                             </figure>
                             <p class="figcaption">Simple calculator app using JS.<br>
-                                <a href="https://luisp-coder.github.io/Calculator/" target="_blank" class="nav-links">
+                                <a href="https://luisp-coder.github.io/Calculator/" target="_blank" class="website">
                                     Link to Website
                                 </a>
                             </p>
@@ -94,7 +99,7 @@
                                 <img src="Images/GreenUp.png" alt="Screenshot of Green energy site" class="app-image" >
                             </figure>
                             <p class="figcaption">Green Energy Mock Website discussing the use of Solar Panels.<br>
-                                <a href="https://luisp-coder.github.io/GreenUpMock/" target="_blank" class="nav-links">
+                                <a href="https://luisp-coder.github.io/GreenUpMock/" target="_blank" class="website">
                                     Link to Website
                                 </a>
                             </p>
@@ -107,12 +112,12 @@
                         <h3 id="about-me">About Me</h3>
 
                         <p id="about-title">Born and raised in SF Bay Area</p>
-                        <p id="background">Coming from an immigrant family 
+                        <p id="background">Coming from an immigrant family,
                             I learned to appreciate, take initiative, and take advantage of 
-                            the opportunities that I have. By making my family proud, I enrolled in the YearUp program
-                            which led to an internship at Momentive.ai and eventually a Full-Time 
-                            roll as a Quality Assurance. But I didn't stop there. Every once in a while I would
-                            study and build small apps to help grow my skills.
+                            the opportunities that I have. By making my family proud and inspiring others alike, I enrolled in the YearUp program
+                            which led to an internship at Momentive.ai and eventually landed a Full-Time 
+                            roll as a Quality Assurance Engineer. But I didn't stop there. Every once in a while I would
+                            study and build small apps to help grow my skills.  <span class="special">Checkout my Resume Below!</span>
                         </p>
                     </div>
 
@@ -132,16 +137,41 @@
         </main>
 
         <footer id="end">
-            <h1>Contact</h1>
+            <div class="wrapper">
+                <div class="side-one">
+                    <h1>Contact Me</h1>
+                    <p>
+                        If you’d like to send me a message, I can be reached through email via form on the right or directly
+                        at luiseperez16@gmail.com. <br>Feel free to connect with me on LinkedIn and checkout my GitHub.
+                    </p>
 
-            <form action="https://formsubmit.co/luiseperez16@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New Email submission!">
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="message" placeholder="Mesage" required>
-                <input type="hidden" name="_next" value="https://luisp-coder.github.io/pages/thankyou.html">
-                <button type="submit">Send</button>
-           </form>
+                    <ul class="network">
+                        <li>
+                            <a href="https://www.linkedin.com/in/luis-perez-6a9338184/" target="_blank">
+                                <img src="SocialIcons/LinkedIinIcon.png" alt="LinkedIn Icon" class="social">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LuisP-coder" target="_blank">
+                                <img src="SocialIcons/githubIcon.png" alt="Github Icon" class="social">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="side-two">
+                    <form action="https://formsubmit.co/luiseperez16@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Email submission!" class="send" autocomplete="given-name" required>
+                        <input type="email" name="email" placeholder="Email Address" class="send" autocomplete="email" required>
+                        <input type="text" name="name" placeholder="Name" class="send" required>
+                        <input type="hidden" name="_next" value="https://luisp-coder.github.io/ThankYouPage/">
+                        <textarea name="message" placeholder="Message" class="long" required></textarea>
+                        <div class="submit-container">
+                            <button type="submit" class="submit">Send Message</button>
+                        </div>
+                   </form>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
