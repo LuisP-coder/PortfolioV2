@@ -30,6 +30,10 @@ nav {
     float: left;
     color: #1A1C1E;
 }
+
+.name:hover {
+    cursor: default;
+}
  
 .list-item {
     float: right;
@@ -75,7 +79,7 @@ nav {
     color: #1A1C1E;
 }
 
-.row {
+.home {
     width: 50%;
     height: 900px;
     padding: 10px;
@@ -92,6 +96,10 @@ nav {
 
 #wave {
     font-size: 32px;
+}
+
+#wave:hover, #small-intro:hover {
+    cursor: default;
 }
 
 .special {
@@ -159,7 +167,6 @@ nav {
 }
 
 .project-outer {
-
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 50px;
@@ -168,7 +175,7 @@ nav {
     place-items: center
 }
 
-.project-upper {
+.project-inner {
     width: 550px;
     height: 425px;
 }
@@ -235,7 +242,6 @@ nav {
     transform: scaleX(1);
     transform-origin: bottom left;
     color: #f15d58;
-    /* background-color: #3269FF; #D0F500 */
 }
 
 #about {
@@ -392,8 +398,31 @@ nav {
     }
 }
 
-@media (max-width: 1075px) {
+@media only screen and (max-width: 1075px) {
+    .home-page {
+        width: 90%;
+    }
+
     #memoji {
         display: none;
+    }
+
+    .project-outer {
+        width: 70%;
+        height: 50%;
+    }
+
+    #about {
+        clear: both;
+        width: 90%;
+    }
+
+    .portrait {
+        display: none;
+    }
+
+    .wrapper {
+        position: relative;
+        display: list-item;
     }
 }
