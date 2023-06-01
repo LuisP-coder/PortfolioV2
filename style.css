@@ -311,7 +311,7 @@ nav {
     height: 400px;
 }
 
-#end {
+#contact {
     clear: both;
     height: 500px;
 }
@@ -399,22 +399,47 @@ nav {
 }
 
 @media only screen and (max-width: 1075px) {
+    .name {
+        display: none;
+    }
+
     .home-page {
-        width: 90%;
+        width: 100%;
+    }
+
+    #fake-pic {
+        width: unset;
     }
 
     #memoji {
         display: none;
     }
 
+    #projects {
+        height: auto;
+    }
+
     .project-outer {
-        width: 70%;
-        height: 50%;
+        display: unset;
+        place-items: center;
+    }
+
+    .project-inner, .project-card {
+       width: 95%;
+       margin-left: 10px;
+    }
+
+    .project-inner {
+        margin-top: 80px;
+    }
+
+    .app-image {
+        width: 85%;
     }
 
     #about {
-        clear: both;
         width: 90%;
+        height: auto;
     }
 
     .portrait {
@@ -422,7 +447,6 @@ nav {
     }
 
     .wrapper {
-        position: relative;
         display: list-item;
     }
 }
